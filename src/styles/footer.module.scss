@@ -1,0 +1,21 @@
+@use '../styles/variables' as vars;
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem vars.$padding-vertical-global 2rem vars.$padding-vertical-global;
+  background-color: vars.$black;
+  color: vars.$white;
+}
+
+.brand-logo {
+  height: 40px;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+  margin: 0;
+}
