@@ -14,7 +14,7 @@ const listItems = housings.map((housing) => (
 const Home = () => {
   return (
     <main>
-      <Banner />
+      <Banner title="Chez vous, partout et ailleurs" />
       <ul className={styles['housings-grid']}>{listItems}</ul>
     </main>
   );
