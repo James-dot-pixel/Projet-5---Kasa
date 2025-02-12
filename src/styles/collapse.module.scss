@@ -1,0 +1,48 @@
+@use '../styles/variables' as vars;
+
+.collapse {
+  border-radius: 0.625rem 0.625rem 0.3125rem 0.3125rem;
+  background: vars.$grey-tranlucent;
+}
+
+.collapse-header {
+  background-color: vars.$red;
+  padding: 0.62rem;
+  padding-right: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  border-radius: 0.3125rem;
+  color: vars.$white;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 142.6%;
+}
+
+.collapse-header:hover {
+  background-color: darken(vars.$red, 3%);
+}
+
+.collapse-content {
+  padding: 1.25rem;
+}
+
+p {
+  color: vars.$black;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 142.6%;
+  text-align: start;
+}
+
+.icon {
+  width: 32px;
+  height: auto;
+}
+
+.large {
+  font-size: 1.5rem; /* Taille pour Large */
+}
