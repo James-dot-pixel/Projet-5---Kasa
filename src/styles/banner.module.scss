@@ -23,3 +23,21 @@
   font-weight: 700;
   line-height: 4.278rem;
 }
+
+@media (max-width: 768px) {
+  .banner {
+    height: 6.9375rem;
+    padding: 1rem;
+    border-radius: 0.625rem;
+    margin-top: 1.69rem;
+    margin-bottom: 1.38rem;
+  }
+
+  .banner h1 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-align: start;
+    -webkit-text-stroke: 0;
+    text-shadow: none;
+  }
+}

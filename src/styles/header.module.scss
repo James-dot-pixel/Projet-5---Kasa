@@ -1,8 +1,13 @@
+@use '../styles/variables' as vars;
+
 header {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  padding-top: 2.8rem;
+  padding-left: vars.$padding-vertical-global;
+  padding-right: vars.$padding-vertical-global;
 }
 
 .brand-logo {
@@ -21,4 +26,28 @@ a {
 
 .link-active {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding-top: 1.25rem;
+    padding-left: vars.$padding-vertical-global-mobile;
+    padding-right: vars.$padding-vertical-global-mobile;
+  }
+
+  .brand-logo {
+    height: 47px;
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1.625rem;
+  }
+
+  a {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+  }
 }

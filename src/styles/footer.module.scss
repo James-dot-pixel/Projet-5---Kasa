@@ -19,3 +19,17 @@ p {
   line-height: 2rem;
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  footer {
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  p {
+    width: 134px;
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 142.6%;
+  }
+}

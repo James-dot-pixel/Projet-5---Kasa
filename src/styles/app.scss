@@ -1,7 +1,19 @@
+@use '../styles/variables' as vars;
+
 #root {
   width: 100%;
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+}
+
+main {
+  padding-left: vars.$padding-vertical-global;
+  padding-right: vars.$padding-vertical-global;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-left: vars.$padding-vertical-global-mobile;
+    padding-right: vars.$padding-vertical-global-mobile;
+  }
 }
