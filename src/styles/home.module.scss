@@ -1,0 +1,14 @@
+ul {
+  margin: 0;
+}
+
+.housings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.12rem 3.75rem;
+  width: 100%;
+  border-radius: 1.5625rem;
+  background: #f6f6f6;
+  padding: 3rem;
+  list-style: none;
+}
