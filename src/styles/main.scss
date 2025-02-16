@@ -1,4 +1,4 @@
-@use 'variables';
+@use 'variables' as *;
 
 * {
   box-sizing: border-box;
@@ -13,7 +13,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  color: variables.$black;
+  color: $black;
 }
 
 a {
@@ -22,9 +22,9 @@ a {
 }
 
 a:visited {
-  color: variables.$black;
+  color: $black;
 }
 
 a:hover {
-  color: variables.$black-hover;
+  color: $black-hover;
 }

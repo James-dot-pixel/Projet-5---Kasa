@@ -1,4 +1,4 @@
-@use '../styles/variables' as vars;
+@use '../styles/variables' as *;
 
 #root {
   width: 100%;
@@ -13,15 +13,15 @@
 }
 
 main {
-  padding-left: vars.$padding-vertical-global;
-  padding-right: vars.$padding-vertical-global;
+  padding-left: $padding-vertical-global;
+  padding-right: $padding-vertical-global;
   width: 100%;
-  max-width: vars.$max-width-global;
+  max-width: $max-width-global;
 }
 
 @media (max-width: 768px) {
   main {
-    padding-left: vars.$padding-vertical-global-mobile;
-    padding-right: vars.$padding-vertical-global-mobile;
+    padding-left: $padding-vertical-global-mobile;
+    padding-right: $padding-vertical-global-mobile;
   }
 }

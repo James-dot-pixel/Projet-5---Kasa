@@ -10,7 +10,7 @@ const Footer = () => {
           <img className={styles['brand-logo']} src={logo} alt="Logo Kasa" />
         </Link>
       </nav>
-      <p>© 2020 Kasa. All rights reserved</p>
+      <p className={styles['footer-text']}>© 2020 Kasa. All rights reserved</p>
     </footer>
   );
 };

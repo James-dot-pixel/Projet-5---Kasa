@@ -1,12 +1,12 @@
-@use '../styles/variables' as vars;
+@use '../styles/variables' as *;
 
 footer {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 4rem vars.$padding-vertical-global 2rem vars.$padding-vertical-global;
-  background-color: vars.$black;
-  color: vars.$white;
+  padding: 4rem $padding-vertical-global 2rem $padding-vertical-global;
+  background-color: $black;
+  color: $white;
   width: 100%;
 }
 
@@ -14,11 +14,13 @@ footer {
   height: 40px;
 }
 
-p {
+.footer-text {
+  color: $white;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 2rem;
   margin: 0;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -27,9 +29,8 @@ p {
     gap: 0.5rem;
   }
 
-  p {
+  .footer-text {
     width: 134px;
-    text-align: center;
     font-size: 0.75rem;
     line-height: 142.6%;
   }

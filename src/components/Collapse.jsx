@@ -15,25 +15,19 @@ const Collapse = ({ title, content, size }) => {
         onClick={() => setIsOpen(!isOpen)}
       >
         {title}
-        {isOpen ? (
-          <img
-            src="src/assets/arrow-up.svg"
-            alt="Arrow Up"
-            className={styles['icon']}
-          />
-        ) : (
-          <img
-            src="src/assets/arrow-down.svg"
-            alt="Arrow Down"
-            className={styles['icon']}
-          />
-        )}
+        <img
+          src="src/assets/arrow-down.svg"
+          alt="Arrow Down"
+          className={`${styles['icon']} ${isOpen ? styles['rotate-icon'] : ''}`}
+        />
       </button>
-      {isOpen && (
-        <div className={styles['collapse-content']}>
-          <p>{content}</p>
-        </div>
-      )}
+      <div
+        className={`${styles['collapse-content']} ${
+          isOpen ? styles['is-open'] : ''
+        }`}
+      >
+        <p className={`${isOpen ? styles['is-open'] : ''}`}>{content}</p>
+      </div>
     </div>
   );
 };

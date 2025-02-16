@@ -1,4 +1,4 @@
-@use '../styles/variables' as vars;
+@use '../styles/variables' as *;
 
 header {
   display: flex;
@@ -6,9 +6,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-top: 2.8rem;
-  padding-left: vars.$padding-vertical-global;
-  padding-right: vars.$padding-vertical-global;
-  max-width: vars.$max-width-global;
+  padding-left: $padding-vertical-global;
+  padding-right: $padding-vertical-global;
+  max-width: $max-width-global;
 }
 
 .brand-logo {
@@ -32,8 +32,8 @@ a {
 @media (max-width: 768px) {
   header {
     padding-top: 1.25rem;
-    padding-left: vars.$padding-vertical-global-mobile;
-    padding-right: vars.$padding-vertical-global-mobile;
+    padding-left: $padding-vertical-global-mobile;
+    padding-right: $padding-vertical-global-mobile;
   }
 
   .brand-logo {
