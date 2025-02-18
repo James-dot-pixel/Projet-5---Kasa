@@ -1,6 +1,6 @@
 import Banner from '../components/Banner.jsx';
 import Collapse from '../components/Collapse.jsx';
-import styles from '../styles/about.module.scss';
+import styles from '../styles/about-page.module.scss';
 
 const About = () => {
   return (
