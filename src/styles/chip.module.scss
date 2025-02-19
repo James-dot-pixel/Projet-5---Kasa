@@ -1,0 +1,16 @@
+@use '../styles/variables' as *;
+
+.chip {
+  min-width: 115px;
+  height: 25px;
+  border-radius: 0.625rem;
+  background: $red;
+  padding: 0 1rem;
+
+  span {
+    color: $white;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+  }
+}

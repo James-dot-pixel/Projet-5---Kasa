@@ -2,7 +2,10 @@
 
 .collapse {
   border-radius: 0.625rem 0.625rem 0.3125rem 0.3125rem;
-  background: $grey-tranlucent;
+  width: 100%;
+  &.is-open {
+    background: $grey-tranlucent;
+  }
 }
 
 .collapse-header {
@@ -28,13 +31,13 @@
 
 .collapse-content {
   padding: 0 1.25rem;
-  overflow: hidden; // Ajoutez cette ligne pour le smooth scrolling
-  max-height: 0; // Initialiser la hauteur à 0
+  overflow: hidden;
+  max-height: 0;
   transition: all 0.3s ease-out;
 
   &.is-open {
     padding: 1.25rem;
-    max-height: 150px; // Hauteur maximale (ajustez en fonction de vos besoins)
+    max-height: none;
   }
 }
 

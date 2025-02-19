@@ -1,0 +1,23 @@
+@use '../styles/variables' as *;
+
+.host {
+  display: flex;
+  align-items: center;
+  gap: 0.63rem;
+  justify-content: flex-end;
+
+  .host-name {
+    color: $red;
+    font-size: 1.125rem;
+    font-weight: 500;
+    width: 5.8125rem;
+    text-align: right;
+  }
+
+  img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 999px;
+  }
+}

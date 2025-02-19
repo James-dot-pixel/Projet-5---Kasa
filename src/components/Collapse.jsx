@@ -2,12 +2,13 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import styles from '../styles/collapse.module.scss';
+import arrowDown from '../assets/arrow-down.svg';
 
 const Collapse = ({ title, content, size }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={styles['collapse']}>
+    <div className={`${styles['collapse']} ${isOpen ? styles['is-open'] : ''}`}>
       <button
         className={`${styles['collapse-header']} ${
           size === 'Large' ? styles['large'] : ''
@@ -16,7 +17,7 @@ const Collapse = ({ title, content, size }) => {
       >
         {title}
         <img
-          src="src/assets/arrow-down.svg"
+          src={arrowDown}
           alt="Arrow Down"
           className={`${styles['icon']} ${isOpen ? styles['rotate-icon'] : ''}`}
         />
