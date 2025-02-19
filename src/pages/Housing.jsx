@@ -1,7 +1,7 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react';
+/* eslint-disable no-unused-vars */
+import React, { useEffect } from 'react';
 import housings from '../data/housings.json';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import Slideshow from '../components/Slideshow';
 import Chip from '../components/Chip';
 import Host from '../components/Host';
@@ -11,7 +11,19 @@ import styles from '../styles/housing-page.module.scss';
 
 const Housing = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const housing = housings.find((h) => h.id === id);
+
+  useEffect(() => {
+    if (!housing) {
+      navigate('/error');
+    }
+  }, [id, navigate, housing]);
+
+  if (!housing) {
+    return null;
+  }
+
   const equipmentList = (
     <ul style={{ listStyleType: 'none', padding: 0 }}>
       {housing.equipments.map((equipment, index) => (
@@ -19,9 +31,6 @@ const Housing = () => {
       ))}
     </ul>
   );
-  if (!housing) {
-    return <div>Logement non trouvé</div>;
-  }
 
   return (
     <main className={styles['housing-page']}>

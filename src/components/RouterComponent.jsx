@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Housing from '../pages/Housing';
-import ErrorPage from '../pages/ErrorPage';
+import ErrorPage from '../pages/ErrorPage'; // Assurez-vous que ErrorPage est importé
 
 const RouterComponent = () => {
   return (
@@ -12,6 +12,7 @@ const RouterComponent = () => {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/housing/:id" element={<Housing />} />
+      <Route path="/error" element={<ErrorPage />} />
       <Route path="*" element={<ErrorPage />} />
     </Routes>
   );
