@@ -7,3 +7,13 @@
 .rating-icon {
   width: 36px;
 }
+
+@media (max-width: 768px) {
+  .rating-wrapper {
+    gap: 0.125rem;
+  }
+
+  .rating-icon {
+    width: 18px;
+  }
+}

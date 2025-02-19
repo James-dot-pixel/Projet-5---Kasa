@@ -41,3 +41,24 @@
     font-weight: 500;
   }
 }
+
+@media (max-width: 768px) {
+  .slideshow {
+    height: 255px;
+    border-radius: 10px;
+    margin-bottom: 0.94rem;
+
+    .btn-previous,
+    .btn-next {
+      width: 2rem;
+    }
+
+    .arrow-icon {
+      width: 24px;
+    }
+
+    .numbers-stepper {
+      display: none;
+    }
+  }
+}

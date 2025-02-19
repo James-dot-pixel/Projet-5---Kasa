@@ -1,16 +1,33 @@
 @use '../styles/variables' as *;
 
 .chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-width: 115px;
   height: 25px;
-  border-radius: 0.625rem;
+  border-radius: 10px;
   background: $red;
   padding: 0 1rem;
+  align-items: center;
 
   span {
     color: $white;
     text-align: center;
     font-size: 0.875rem;
     font-weight: 700;
+  }
+}
+
+@media (max-width: 768px) {
+  .chip {
+    min-width: 84px;
+    height: 18px;
+    border-radius: 5px;
+    padding: 0 0.5rem;
+
+    span {
+      font-size: 0.625rem;
+    }
   }
 }

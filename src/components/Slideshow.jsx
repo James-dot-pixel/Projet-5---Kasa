@@ -23,10 +23,18 @@ const Slideshow = ({ images }) => {
       {images.length > 1 && (
         <>
           <button className={styles['btn-previous']} onClick={handlePrevious}>
-            <img src={backwardArrow} alt="Précédent" />
+            <img
+              className={styles['arrow-icon']}
+              src={backwardArrow}
+              alt="Précédent"
+            />
           </button>
           <button className={styles['btn-next']} onClick={handleNext}>
-            <img src={forwardArrow} alt="Suivant" />
+            <img
+              className={styles['arrow-icon']}
+              src={forwardArrow}
+              alt="Suivant"
+            />
           </button>
         </>
       )}
