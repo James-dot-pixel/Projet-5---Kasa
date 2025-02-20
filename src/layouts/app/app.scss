@@ -1,0 +1,27 @@
+@use '../../utils/_variables.scss' as *;
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.app {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  padding-left: $padding-vertical-global;
+  padding-right: $padding-vertical-global;
+  width: 100%;
+  max-width: $max-width-global;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-left: $padding-vertical-global-mobile;
+    padding-right: $padding-vertical-global-mobile;
+  }
+}

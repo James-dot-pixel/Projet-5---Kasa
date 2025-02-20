@@ -1,0 +1,41 @@
+@use '../../utils/variables' as *;
+
+.host {
+  display: flex;
+  align-items: center;
+  gap: 0.63rem;
+  justify-content: flex-end;
+
+  .host-name {
+    color: $red;
+    font-size: 1.125rem;
+    font-weight: 500;
+    width: 5.8125rem;
+    text-align: right;
+  }
+
+  img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 999px;
+  }
+}
+
+@media (max-width: 768px) {
+  .host {
+    gap: 0.66rem;
+
+    .host-name {
+      font-size: 0.75rem;
+      width: 4rem;
+    }
+
+    img {
+      width: 2rem;
+      height: 2rem;
+      object-fit: cover;
+      border-radius: 999px;
+    }
+  }
+}

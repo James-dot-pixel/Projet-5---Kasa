@@ -1,10 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from '../pages/Home';
-import About from '../pages/About';
-import Housing from '../pages/Housing';
-import ErrorPage from '../pages/ErrorPage'; // Assurez-vous que ErrorPage est importé
+import Home from '../layouts/home/Home.jsx';
+import About from '../layouts/about/About.jsx';
+import Housing from '../layouts/housing/Housing.jsx';
+import ErrorPage from '../layouts/errorpage/ErrorPage.jsx';
 
 const RouterComponent = () => {
   return (
